@@ -1,5 +1,5 @@
 ## Material and Mouse driven theme for [AwesomeWM 4.3](https://awesomewm.org/)
-### Original work by PapyElGringo, official development seem to have moved to [material-shell](https://github.com/PapyElGringo/material-shell)
+### Original work by PapyElGringo, official development seems to have moved to [material-shell](https://github.com/PapyElGringo/material-shell)
 
 Note: This fork focuses on streamlining the config and adding some Quality of Life touches to the theme.
 
@@ -15,24 +15,24 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 
 
 ## Installation
-### Note: the best transition is from gnome to material-awesome as KDE-plasma can break some indicators until plasma is purged entierly.
+### Note: the best transition is from Gnome to Material-Awesome as KDE-Plasma can break some indicators until Plasma is purged entirely.
 
-### 1) Get all the dependencies
-- [AwesomeWM](https://awesomewm.org/) as the window manager - universal package install: awesome
-- [Roboto](https://fonts.google.com/specimen/Roboto) as the **font** - Debian: fonts-roboto Arch: ttf-roboto
-- [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher - universal install: rofi
-- [Compton](https://github.com/tryone144/compton) for the compositor (blur and animations) universal install: compton
-- [i3lock](https://github.com/meskarune/i3lock-fancy) the lockscreen application Arch Install: i3lock Debian: i3lock-fancy
-- [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard package: xclip
+### 1. Get all of the dependencies:
+- [AwesomeWM](https://awesomewm.org/) is the window manager. Universal package install: awesome
+- [Roboto](https://fonts.google.com/specimen/Roboto) is the font. Debian: fonts-roboto Arch: ttf-roboto
+- [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher. Universal package install: rofi
+- [Compton](https://github.com/tryone144/compton) for the compositor (blur, animations, and transparency). Universal package install: compton
+- [i3lock](https://github.com/meskarune/i3lock-fancy) is the lockscreen application. Debian: i3lock-fancy Arch: i3lock
+- [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard. Universal package install: xclip
 - __gnome-keyring__ and a __policykit-agent__ (by default policykit-1-gnome is enabled) OR mate-polkit
-- (Optional) __qt5-styles-gtk2__ or __qt5-styleplugins-git__ for making QT and KDE applications look the same as gnome applications debian: qt5-style-plugins
-- (Optional) [Materia](https://github.com/nana-4/materia-theme) as GTK theme - Arch Install: materia-theme debian: materia-gtk-theme
-- (Optional) [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) as icon theme Universal Install: wget -qO- https://git.io/papirus-icon-theme-install | sh
-- (Optional) [lxappearance](https://sourceforge.net/projects/lxde/files/LXAppearance/) to set up the gtk and icon theme
-- (Optional) [xbacklight](https://www.x.org/archive/X11R7.5/doc/man/man1/xbacklight.1.html) for adjusting brightness on laptops (disabled by default)
-- (Optional) [kde-spectacle](https://kde.org/applications/utilities/org.kde.spectacle) my personal screenshot utility of choice, can be replaced by whichever you want, just remember to edit the screenshot utility script
+- (Optional) __qt5-styles-gtk2__ or __qt5-styleplugins-git__ for making QT and KDE applications look the same as Gnome applications debian: qt5-style-plugins
+- (Optional) [Materia](https://github.com/nana-4/materia-theme) as GTK theme. Debian: materia-gtk-theme Arch: materia-theme
+- (Optional) [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) as icon theme. Universal package install: wget -qO- https://git.io/papirus-icon-theme-install | sh
+- (Optional) [lxappearance](https://sourceforge.net/projects/lxde/files/LXAppearance/) to set up the gtk and icon theme.
+- (Optional) [xbacklight](https://www.x.org/archive/X11R7.5/doc/man/man1/xbacklight.1.html) for adjusting brightness on laptops.  (disabled by default)
+- (Optional) [kde-spectacle](https://kde.org/applications/utilities/org.kde.spectacle) my personal screenshot utility of choice. It can be replaced by whichever you want, just remember to edit the screenshot utility script.
 
-### 2) Clone the configuration
+### 2. Clone the configuration:
 
 ```
 git clone https://github.com/ChrisTitusTech/material-awesome.git ~/.config/awesome
@@ -44,11 +44,11 @@ git clone https://github.com/ChrisTitusTech/material-awesome.git ~/.config/aweso
 git clone -b awesome-4.2 https://github.com/PapyElGringo/material-awesome.git ~/.config/awesome
 ```
 
-### 3) Set the themes
-Start **lxappearance** to active the **icon** theme and **GTK** theme
-Note: for cursor theme, edit `~/.icons/default/index.theme` and `~/.config/gtk3-0/settings.ini`, for the change to also show up in applications run as root, copy the 2 files over to their respective place in `/root`.
+### 3. Set the themes:
+Start **lxappearance** to activate the **icon** theme and **GTK** theme.
+Note: for cursor theme, edit `~/.icons/default/index.theme` and `~/.config/gtk3-0/settings.ini`, for the change to also show up in applications run as root, copy the two files over to their respective place in `/root`.
 
-### 4) Same theme for Qt/KDE applications and GTK applications, and fix missing indicators
+### 4. Same theme for Qt/KDE applications and GTK applications, and fix missing indicators
 First install `qt5-style-plugins` or `qt5-style-gtk2` (debian) | `qt5-styleplugins` (arch) and add this to the bottom of your `/etc/environment`
 
 ```bash
